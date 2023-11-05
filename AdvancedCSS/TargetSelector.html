@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #target-form{
+            display: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: red;
+            background-color: wheat;
+            display: block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            margin: 2%;
+        }
+
+        #target-form:target{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Targe Selector</h1>
+    <a href="#target-form">LOGIN FORM</a>
+    <div id="target-form">
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter name</td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Enter email</td>
+                    <td><input type="email" name="" id=""></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <a href="#">CLOSE</a>
+</body>
+</html>

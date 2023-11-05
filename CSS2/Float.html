@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .col {
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        border: 2px solid black;
+      }
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+      .row::after {
+        display: block;
+        clear: both;
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FLOAT : CLEARFIX</h1>
+    <div class="row">
+      <div class="col left"></div>
+      <div class="col right"></div>
+    </div>
+
+    <h2>MULTICOL LAYOUT</h2>
+    <div class="row">
+        <div class="col left"></div>
+        <div class="col left"></div>
+        <div class="col left"></div>
+        <div class="col right"></div>
+    </div>
+  </body>
+</html>

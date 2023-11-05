@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 20%;
+            animation: anim_1 5s infinite alternate;
+        }
+
+
+        @keyframes anim_1 {
+            0%{
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+            25%{
+                transform: translate(800px , 0px) rotate(0deg);
+            }
+            30%{
+                transform: translate(800px,500px) rotateY(180deg);
+            }
+            50%{
+                transform: translateX(800px , 500px) rotateY(90deg);
+            }
+            55%{
+                transform: translate(800px, 500px) rotate();
+            }
+            100%{
+                transform: translateX(0px) rotateY(0deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/Assets/car.gif" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            transition-duration: 5s;
+        } 
+
+        #hide:checked ~img{
+            /* display: none; */
+            opacity: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>CHECKED SELECTOR</h1>
+    <input type="radio" name="toggle" id="hide"> 
+    <label for="hide">HIDE</label>
+    <input type="radio" name="toggle" id="show"> 
+    <label for="show">SHOW</label>
+    <hr>
+    <img src="/Assets/XOsX.gif" alt="">
+</body>
+</html>

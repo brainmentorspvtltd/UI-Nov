@@ -1,0 +1,264 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-image: url("/WebResume/assets/images/triangles-1430105_1920.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 50px 0px;
+}
+
+
+#main-nav{
+    width: 65vw;
+    margin: 0px auto 20px;
+    background-color: black;
+}
+
+#main-nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-nav ul li{
+    width: 100%;
+    text-align: center;
+}
+
+#main-nav ul li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px 20px;
+    background-color: #ED9675;
+}
+
+#main-nav ul li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media(max-width : 768px){
+    #conatiner{
+        padding: 0px;
+    }
+    #main-nav{
+        position: fixed;
+        z-index: 100;
+    }
+    #main-nav ul li span{
+        display: none;
+    }
+}
+
+#wrapper{
+    background-color: #ED9675;
+    width: 800px;
+    margin: 0 auto;
+    height: calc(100vh - 150px);
+    border-radius: 20px;
+    box-shadow: -10px 10px 6px 5px gray;
+    position: relative;
+}
+
+#wrapper > .row{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    padding: 5%;
+}
+
+.innerwrapper{
+    align-self: start;
+    height: calc(100vh - 500px);
+}
+
+@media(max-width : 1400px){
+    #wrapper , #main-nav{
+        width: 1160px;
+    }
+}
+@media(max-width : 1200px){
+    #wrapper , #main-nav{
+        width: 950px;
+    }
+}
+@media(max-width : 992px){
+    #wrapper , #main-nav{
+        width: 760px;
+    }
+}
+@media(max-width : 768px){
+    #wrapper , #main-nav{
+        width: 100%;
+    }
+
+    #wrapper{
+        height: 100%;
+    }
+
+    #wrapper > .row{
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.intro{
+    text-align: center;
+    height: 100%;
+    background-color: #a77a68;
+    color: #000;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.intro a {
+    color: #000;
+}
+ .intro ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ @media(max-width:768px){
+    .intro{
+        display: none;
+    }
+ }
+
+ #home h1 {
+    text-align: center;
+    margin-top: 15%;
+    font-style: normal; 
+    color: black; 
+    font-size: 4em;
+ }
+ #home p {
+    text-align: center;
+    margin-top: 3%;
+    font-style: italic; 
+    color: rgb(132, 127, 127); 
+    font-size: 3em;
+ }
+
+@media(max-width:768px){
+    #home h1{
+        font-size: 5em;
+        margin-top: 45%;
+    }
+}
+
+.content > section{
+    display: none;
+    overflow-y: scroll;
+}
+
+.content>section:target{
+    display: block;
+}
+
+#about h2, #skills h2, #project h2, #contact h2{
+    letter-spacing: 2px;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px solid blue;
+}
+#about h3,p , #project .card , .education h3{
+    text-align: justify;
+    margin: 20px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#about ul li{
+    letter-spacing: 1px;
+}
+
+#about ul li span{
+    color: #000;
+    font-weight: bold;
+}
+
+.skillset ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.skillset ul li .bar{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+}
+
+.skillset ul li span{
+    display: block;
+    height: inherit;
+    width: inherit;
+    position: relative;
+}
+
+.skillset ul li .p-75{
+    width: 75%;
+}
+.skillset ul li .p-70{
+    width: 70%;
+}
+.skillset ul li .p-80{
+    width: 80%;
+}
+.skillset ul li .p-85{
+    width: 85%;
+}
+
+.skillset ul li span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(52, 40, 18);
+    animation: progressbar 1s linear;
+}
+
+@keyframes progressbar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.content{
+    position: relative;
+    overflow-x: hidden;
+    perspective: 400px;
+}
+
+@media (max-width :768px) {
+    #about, #skills,#projects,#contact{
+        margin-top: 25px;
+    }
+}

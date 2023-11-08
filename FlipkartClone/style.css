@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration : none ;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+#header{
+    margin-top: 1%;
+    background-color: #fff;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-1{
+    width: 60%;
+}
+
+.col-2{
+    width: 40%;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 90%;
+    margin-left : 20%;
+    margin-top: 12%;
+}
+
+.search{
+    width: 75%;
+    margin-left: 2.5%;
+}
+
+img{
+    width: 100%;
+}
+
+.search input[type="text"]{
+    width: 95%;
+    height: 30px;
+    border-radius: 2px;
+    border-color: transparent;
+    background-color: #F0F5FF;
+    background-image: url("https://icon-library.com/images/search-for-icon/search-for-icon-1.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 5%;
+    background-position-x: 1%;
+    background-size: 20px 20px;
+    margin-top: 2%;
+}
+
+ul li{
+    list-style: none;
+}
+
+.col-2 ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-weight: 500;
+    padding: 20px 2px;
+    font-size: large;
+    font: 1em sans-serif;
+}
+
+.col-2 ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+
+/* section-1 */
+#section-1{
+    background-color: #fff;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+#section-1 .product{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#section-1 .product img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#section-1 h4{
+    margin-top: 10px;
+    color: black;
+    font-size: .82em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* banner */
+#banner , #banner2{
+    margin-top: 1%;
+}
+
+/* section-2 */
+#section-2{
+    background-color: #fff;
+    padding: 1% 0;
+    margin-top: 1%
+}
+
+#section-2 h2{
+    margin-left: 1.5em;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black ;
+}
+
+#section-2 .product{
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    width: 15%;
+    margin: 1% 2%;
+    border-radius: 2%;
+    border: 1px solid #e6e0e0;
+}
+
+#section-2 .product img{
+    height: 180px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+#section-2 h3{
+    color: black;
+    font: 1em sans-serif;
+}
+#section-2 h4{
+    color: black;
+    /* font: 1em sans-serif; */
+}
+
+/* mahasale */
+
+#maha-sale{
+    margin-top: 1%;
+}
+#maha-sale .container{
+    margin-top: 1%;
+    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 5px;
+}
+
+#maha-sale .row .prod{
+    display: inline-block;
+    width: 33%;
+    margin-left: 4px;
+}
+
+#maha-sale .prod img{
+    height: 250px;
+}
+
+.main-body{
+    margin: 0 2%;
+}
+
+#section-2 .product .p-img:hover img{
+    /* transform: scaleX(1.2); */
+    transform: scale(1.1);
+}
